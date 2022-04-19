@@ -2,6 +2,7 @@ import { nextTick } from "vue";
 import { createWebHistory, createRouter } from "vue-router";
 import HomeView from "../views/HomeView.vue";
 import LoginView from '../views/LoginView.vue';
+import NotFound from '../views/404.vue'
 
 const routes = [
   {
@@ -15,6 +16,14 @@ const routes = [
     component: LoginView,
     meta: {
       title: 'Login to Google Drive Clone'
+    }
+  },
+  {
+    path: '*',
+    name: '404',
+    component: NotFound,
+    meta: {
+      title: '404 Not found'
     }
   }
 ];
