@@ -19,7 +19,7 @@ const routes = [
     }
   },
   {
-    path: '*',
+    path: '/404',
     name: '404',
     component: NotFound,
     meta: {
@@ -37,6 +37,9 @@ const DEFAULT_TITLE = 'Google Drive Clone';
 
 router.afterEach((to, _) => {
   nextTick(() => {
+    if (to.path != '/' && to.path != '/login' && to.path != '/404') {
+      window.location.href = '/404';
+    }
     document.title = to.meta.title as string || DEFAULT_TITLE
   })
 })
