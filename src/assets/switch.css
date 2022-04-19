@@ -1,0 +1,67 @@
+:root {
+    --primary-col:linear-gradient(to bottom, #4fc5fa 0%,#0f75f5 100%);
+    --primary-col-ac:#0f75f5;
+    --bg-color-input:#fff;
+  
+  
+    --p-input-bg:#fff;
+    --p-input-color:#000;
+    --p-input-color-plac:#cdcdcd;
+  
+    --p-input-color:#808080;
+    --p-input-bd:#808080;
+    --bg-hover-color:#f9f9f9;
+    --bg-front-col:#000;
+    --invalid-color:#d6513c;
+    --valid-color:#94d63c;
+}
+  
+  * {
+   -webkit-tap-highlight-color: transparent;
+  }
+  
+  .p-form-switch {
+    --width: 80px;
+    cursor: pointer;
+    display: inline-block;
+  }
+  
+  .p-form-switch > input:checked + span::after {
+    left: calc(100% - calc(var(--width) / 1.8));
+  }
+  
+  .p-form-switch > input:checked + span {
+    background: #60c35b;
+  }
+  
+  .p-form-switch > span {
+    background: #e0e0e0;
+    border: 1px solid #d3d3d3;
+    border-radius: 500px;
+    display: block;
+    height: calc(var(--width) / 1.6);
+    position: relative;
+    transition: all 0.2s;
+    width: var(--width);
+  }
+  
+  .p-form-switch > span::after {
+    background: #f9f9f9;
+    border-radius: 50%;
+    border: 0.5px solid rgba(0, 0, 0, 0.101987);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 1px rgba(0, 0, 0, 0.16), 0px 3px 8px rgba(0, 0, 0, 0.15);
+    box-sizing: border-box;
+    content: "";
+    height: 84%;
+    left: 3%;
+    position: absolute;
+    top: 6.5%;
+    transition: all 0.2s;
+    width: 52.5%;
+  }
+  
+  .p-form-switch > input {
+    display: none;
+  }
+  
+  

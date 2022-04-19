@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*,
+*::before,
+*::after {
+  -webkit-tap-highlight-color: transparent;
+  box-sizing: border-box;
+  margin: 0;
+  position: relative;
+  font-weight: normal;
+}
+
+.popper {
+  background-color: #333 !important;
+  padding: 5px 10px !important;
+  border-radius: 10px !important;
+}
+
+
+body {
+  min-height: 100vh;
+  color: #fff;
+  background: #1e1e1e;
+  font-family: 'Roboto', sans-serif; 
+}
+
+.bar-button, .bar-button.open:hover {
+  background: none !important;
+  cursor: pointer;
+}
+
+.dg-main-content, .dg-main-content *, .dg-container--has-input .dg-content-footer {
+  color: white;
+  background: #333;
+}
+
+.dg-btn--cancel, .dg-btn--cancel * {
+  background-color: #0096D9;
+}
+
+.label {
+  color: white;
+}
+
+
+.bar-menu.menu {
+  border: 0.5px solid gray;
+  /* border-radius: 5px !important; */
+}
+
+.bar-menu-item{
+  border-bottom: 1px solid gray;
+}
+
+.bar-menu-items {
+  padding: 0 !important;
+}
+
+
+.bar-menu.menu, .bar-menu-items, .bar-menu-item, .bar-menu.menu * {
+  /* min-width: none !important; */
+  width: fit-content;
+  min-width: fit-content !important;
+  /* padding: 0 !important; */
+  background-color: #333 !important;
+}
